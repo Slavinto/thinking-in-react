@@ -1,8 +1,8 @@
 const ProductCategoryRow = ({ productCategory }) => {
   return (
-    <div>
-      <h2>Product Category Name</h2>
-    </div>
+    <tr>
+      <th colSpan="2">{productCategory}</th>
+    </tr>
   );
 };
 
