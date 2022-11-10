@@ -1,12 +1,14 @@
-const ProductRow = ({ name, price }) => {
+const ProductRow = ({ name, price, stocked }) => {
+  const productRowStyle = {
+    lineHeight: "5px",
+    height: "20px",
+    padding: "10px",
+    color: `${stocked ? "#000" : "red"}`,
+  };
   return (
     <tr>
-      <td>
-        <h4>{name}</h4>
-      </td>
-      <td>
-        <h4>{price}</h4>
-      </td>
+      <td style={productRowStyle}>{name}</td>
+      <td style={productRowStyle}>{price}</td>
     </tr>
   );
 };

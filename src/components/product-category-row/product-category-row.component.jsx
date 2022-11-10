@@ -1,7 +1,14 @@
-const ProductCategoryRow = ({ productCategory }) => {
+const ProductCategoryRow = ({ category }) => {
+  const catStyle = {
+    fontWeight: "bold",
+    fontSize: "20px",
+    lineHeight: "10px",
+  };
   return (
     <tr>
-      <th colSpan="2">{productCategory}</th>
+      <th style={catStyle} colSpan="2">
+        {category}
+      </th>
     </tr>
   );
 };
